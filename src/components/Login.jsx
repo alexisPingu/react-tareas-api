@@ -35,7 +35,7 @@ const Login = () => {
                     //Redirigir a la ruta de tareas 
                     //tomar las cookies
                     document.cookie =`token=${token.token};path=/;somesite=strict;`
-                    window.location = '/tareas'
+                    window.location = '/#/tareas'
                 }
             } catch (error) {
                 Swal.fire('Error',error.message,'error')
