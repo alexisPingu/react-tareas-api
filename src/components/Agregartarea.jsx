@@ -7,6 +7,7 @@ export const Agregartarea = ({guardar,tareaSeleccionada,actualizar}) => {
     const guardarDatos=()=>{
       if(tareaSeleccionada) actualizar({...tareaSeleccionada,descripcion:descripcion})
       else guardar(descripcion)
+      setDescripcion(null)
     }
     useEffect(()=>{
       if(tareaSeleccionada){
